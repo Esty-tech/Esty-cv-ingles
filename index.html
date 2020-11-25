@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html> 
+<html lang="es">
+  <head>
+      <meta charset="utf-8"/>
+      <title> Esterline CV</title>
+      <meta name="author" content="Esterline"/>
+      <meta name="description" content="mi Curriculum"/>
+      <meta name="keyswords" contents="pagina web, primera pagina, 
+                  mi primer titulo, html, css, cv, studiocode"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e570fae7f7.js"></script>
+    <script src="https://kit.fontawesome.com/eb9a2aef55.js" crossorigin="anonymous"></script> 
+    <script src="colega.json"></script> 
+    <link rel="import" href="calendar.html">
+
+    <script>
+      $.getJSON("colega.json", function( data ) {
+        var colega = [];
+        var estado = "";
+        $.each( data, function(key, val) {
+          items.push( "<li id='" + key + "'>" + val + "</li>" );
+        });
+        $( "<ul/>", {
+          "class": "my-new-list",
+          html: colega.join("")
+        }).appendTo("body");
+      });
+    </script>
+
+    
+
+             <link rel="stylesheet" href="media.css">   
+             <link rel="stylesheet" href="estilosmodal.css"> 
+             <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+
+
+    
+
+
+
+    <header>WEB Developer</header>
+    <main class="cuerpo">
+          <div class="lateral">
+            <header>ESTERLINE, Louis Jeune</header>
+            <div class="foto"> <img src="foto.jpg" alt="Foto perfil"/></div>
+            <div class="contacto"> 
+                <p>Contacto</p>
+                <ul>
+                  <base href="https://demos.telerik.com/kendo-ui/qrcode/index">
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.3.1021/styles/kendo.default-v2.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2020.3.1021/js/jquery.min.js"></script>
+    
+    
+    <script src="https://kendo.cdn.telerik.com/2020.3.1021/js/kendo.all.min.js"></script>
+                  <div id="example" class="k-content">
+                    <div class="qr-wrapper">
+                        <div class="demo-section">
+                            <p>E-mail</p>
+                            <div id="qrMail"></div>
+                        </div>
+                        <div class="demo-section">
+                            <p>URL</p>
+                            <div id="qrUrl"></div>
+                        </div>
+                        <div class="demo-section">
+                            <p>Telephone</p>
+                            <div id="qrTelephone"></div>
+                        </div>
+                        <div class="demo-section">
+                            <p>Geo Location</p>
+                            <div id="qrGeoLocation"></div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                
+                            $("#qrMail").kendoQRCode({
+                                value: "mailto:esterline023@yahoo.fr",
+                                size: 80,
+                                color: "#e15613",
+                                background: "transparent"
+                            });
+                
+                            $("#qrUrl").kendoQRCode({
+                                value: "https://www.linkedin.com/in/esterline-louis-jeune-202b0a16b/",
+                                errorCorrection: "M",
+                                size: 80,
+                                border: {
+                                    color: "#ffa500",
+                                    width: 2
+                                }
+                            });
+                
+                            $("#qrTelephone").kendoQRCode({
+                                value: "tel:+54-3413570265",
+                                errorCorrection: "Q",
+                                size: 80,
+                                color: "#ffa500",
+                                border: {
+                                    color: "#e15613",
+                                    width: 2
+                                }
+                            });
+                
+                            $("#qrGeoLocation").kendoQRCode({
+                                value: "geo:-37.0582959,-64.5207147",
+                                errorCorrection: "H",
+                                size: 80,
+                                color: "#166a83"
+                            });
+                        });
+                
+                    </script>
+                
+                    <style>
+                        .demo-section {
+                            display: inline-block;
+                            margin: 5px 10px 5px 0;
+                        }
+                
+                        .k-qrcode {
+                            display: inline-block;
+                            margin: 3px 0 0;
+                            border: none;
+                        }
+                    </style>
+                </div>
+                
+                    <li> <strong>Telefono: (341) 3570265</strong> </li>
+                    <li> <a href="https://api.whatsapp.com/send?phone=[054][3413570265]"><i class="fab fa-whatsapp-square"> <strong style="font-size: 15px;">whatsapp</strong> </i></a> 
+                    </li>
+                    <li> <strong>Direccion: Pasaje Marcos Paz 3163</strong> </li>
+                </ul>
+         </div>
+
+
+                 <div class="portafolio">
+                    <p>Portfolio</p>
+                    <ul> 
+                        <li><a href="https://esty-tech.github.io/Hotel/">Folio 1</a></li>
+                        <li><a href="https://esty-tech.github.io/Folio-2-accesorio-cv/.">Folio 2 - Diversos ejemplos (diario, venta de productos, etc)</a></li>
+                      </div>
+
+
+            <div class="perfil">
+                <hr><p>Perfil</p>
+                Ordenada y responsable, sé comunicarme de forma efectiva. Creo que una optima comunicación 
+                es el factor más importante para alcanzar una organización eficiente.Buen desempeño en entorno desafiante. 
+                 Mi objetivo es trabajar en su empresa como programadora y continuar aprendiendo.
+            </div>
+
+                 
+        </div>
+        
+
+       
+
+
+        <div class="contenido">
+            <div class="principal">
+                <section>
+                    <p>Formaci&oacuten complementaria</p>
+                <ul>
+                    <li>Programaci&oacuten. Cilsa ONG,Rosario. Actualmente 2020</li>
+                     <li>Curso de Ayudant&iacutea de Docente. FCM, Rosario (2015) </li>
+                </ul>
+  
+                     <hr><p>Formaci&oacuten</p>
+                Universitario en curso. Facultad de Ciencias m&eacutedicas.
+                  UNR,Rosario.Actualmente 2020
+  
+                     <hr><p>Inform&aacutetica e idiomas</p>
+                   <ul>
+                       <li>Word, Excel y Powerpoint: nivel avanzado</li>
+                       <li>HTML</li>
+                       <li>Static WEb design / studiocode / identidad digital</li>
+                       <li>Php / Javascript / Eclipse / Javaserver page</li>
+                   </ul></strong>
+  
+                   <hr><p>Idiomas</p>
+                   <ul>
+                       <li> <strong>Ingl&eacutes</strong>: Nivel intermedio</li>
+                       <li> <strong>Franc&eacutes</strong>: Nivel avanzado</li>
+                       <li> <strong>Portugu&eacutes</strong>: Nivel b&aacutesico</li>
+                   </ul>
+  
+                            <hr><p>Experiencia Laboral</p>
+                   <ul>
+                       
+                       <li>► Ayudante de catedra en inform&aacutetica.Facultad de Ciencias
+                           m&eacutedicas.UNR,Rosario. 2015-Actualmente
+                       </li>
+                       <li>► Asistente gerontol&oacutegica.Apoyo en enfermeria.Santa Rita, Laprida 1216
+                           Rosario,Argentine (2016-2019)
+                       </li>
+                       <li>► Cajera en un establecimiento comercial-salas de cine.
+                          Showcase Alto Rosario shopping, junin 501, Rosario 2012-2015</li>
+                          
+                          <li>Voluntariado en M&eacutedicos Del Mundo-MDM. (2015)</li>
+  
+                       </ul> 
+
+                      </section>
+
+                      
+            </div>
+        </div>
+        
+
+        <div class="sociales">
+            <a href="https://www.facebook.com/esterline.louisjeune.3"><i class="fab fa-facebook-f"> Facebook</i></a>
+            <a href="https://api.whatsapp.com/send?phone=[054][3413570265]"><i class="fab fa-whatsapp-square"> whatsapp</i></a> 
+            <a href="Docesty@protonmail.com"><i class="fas fa-envelope-open-text"> Mail</i><a>
+            <a href="https://www.linkedin.com/in/esterline-louis-jeune-202b0a16b/"><i class="fab fa-linkedin-in"> LinkedIn</i></a> 
+    
+        </div>
+
+        
+    
+    </main>
+   
+
+
+    <footer>
+      <base href="https://demos.telerik.com/kendo-ui/pdf-export/page-layout">
+        
+        
+      <div class="page-container hidden-on-narrow">
+        <div class="pdf-page size-a4">
+          <div class="inner-page">
+            <div class="pdf-header">
+              <span class="company-logo">
+                 colegas que recomiendo
+              </span>
+              <span class="invoice-number">CILSA 2020</span>
+            </div>
+            <div class="addresses">
+              <div class="for">
+                <span>
+                  ► Hemos compartidos doce (12) meses de cursado<br />
+                  ► Aprendimos a cooperar y trabajar en equipo<br />
+                </span>
+              </div>
+            </div>
+            <div class="pdf-body">
+              <div id="grid"></div>
+              <div class="pdf-footer">
+                <span>
+                  Esty-tech<br />
+                  Esterline, Louis Jeune<br />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="responsive-message"></div>
+    
+      <style>
+        /*
+          Use the DejaVu Sans font for display and embedding in the PDF file.
+          The standard PDF fonts have no support for Unicode characters.
+        */
+        .pdf-page {
+          font-family: "DejaVu Sans", "Arial", sans-serif;
+        }
+      </style>
+    
+      <script>
+        // Import DejaVu Sans font for embedding
+    
+        // NOTE: Only required if the Kendo UI stylesheets are loaded
+        // from a different origin, e.g. cdn.kendostatic.com
+        kendo.pdf.defineFont({
+          "DejaVu Sans": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
+          "DejaVu Sans|Bold": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
+          "DejaVu Sans|Bold|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
+          "DejaVu Sans|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
+          "WebComponentsIcons": "https://kendo.cdn.telerik.com/2017.1.223/styles/fonts/glyphs/WebComponentsIcons.ttf"
+        });
+      </script>
+    
+      <!-- Load Pako ZLIB library to enable PDF compression -->
+          <script src="../content/shared/js/pako.min.js"></script>
+      
+      <script>
+        function getPDF(selector) {
+          kendo.drawing.drawDOM($(selector)).then(function (group) {
+            kendo.drawing.pdf.saveAs(group, "Invoice.pdf");
+          });
+        }
+    
+        $(document).ready(function () {
+          var data = [
+            { productName: "Esterline Louis Jeune", unitPrice: "https://esty-tech.github.io/Esty-cv/" },
+            { productName: "Emiliano Mayer", unitPrice: "cv" },
+            { productName: "Angelina", unitPrice:"cv"},
+            { productName: "Leo ", unitPrice: "cv"},
+            { productName: "Alejandra Ajalid", unitPrice: "cv" },
+            { productName: "Alejandra Ajalid", unitPrice: "cv" },
+            { productName: "Alejandra Ajalid", unitPrice: "cv" },
+          ];
+          var schema = {
+            model: {
+              productName: { type: "string" },
+              unitPrice: { type: "string", editable: true },
+              
+            }
+          };
+          var aggregate = [
+            { field: "qty", aggregate: "sum" },
+            { field: "total", aggregate: "sum" }
+          ];
+          var columns = [
+            { field: "productName", title: "Apellido y Nombre"},
+            { field: "unitPrice", title: "Enlace al curriculum"},
+            
+          ];
+          var grid = $("#grid").kendoGrid({
+            editable: true,
+            sortable: true,
+            dataSource: {
+              data: data,
+              aggregate: aggregate,
+              schema: schema,
+            },
+            columns: columns
+          });
+    
+          $("#paper").kendoDropDownList({
+            change: function () {
+              $(".pdf-page")
+                .removeClass("size-a4")
+                
+                .addClass(this.value());
+            }
+          });
+        });
+      </script>
+
+<Script> $.getJSON( "grupocilsa.json", function( data ) {
+  var colegas = [];
+  $.each( data, function( key, val ) {
+    colegas.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: colegas.join( "" )
+  }).appendTo( "body" );
+});
+</script>
+
+        <div class="copy">&copy;2020 Esty-tech</div>
+    </footer>
+
+    <base href="https://demos.telerik.com/kendo-ui/rating/templates">
+    <div id="example">
+    <div class="demo-section k-content center">
+        <span><Table>Le gusto el diseño?</Table></span>
+        <input id="rating" style="width: 100%;" />
+    </div>
+
+    
+
+    <script>
+        $(document).ready(function () {
+            // Rating Templates
+            $("#rating").kendoRating({
+                min: 1,
+                max: 6,
+                value: 5,
+                itemTemplate: "<i class='k-icon k-i-heart-outline'></i>",
+                selectedTemplate: "<i class='k-icon k-i-heart'></i>",
+                hoveredTemplate: "<i class='k-icon k-i-heart'></i>"
+            });
+
+           
+
+            
+        });
+
+        
+    </script>
+
+    <script id="rating-selected-template" type="x/kendo-template">
+        <svg width="50" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="Gradient#=index#">
+                    <stop class="main-stop" offset="0%" />
+                    <stop class="alt-stop" offset="90%" />
+                </linearGradient>
+            </defs>
+
+            <rect class="k-i-rect" x="0" y="0" rx="5" ry="5" width="50" height="30" fill="url(\#Gradient#=index#)" />
+        </svg>
+    </script>
+
+    <script id="rating-item-template" type="x/kendo-template">
+        <svg width="50" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" rx="5" ry="5" width="50" height="30" fill-opacity="0" stroke="\#e9e9e9" stroke-width="2" />
+        </svg>
+    </script>
+
+    <script id="rating-label-template" type="x/kendo-template">
+        #= getLabelText(data.value) #
+    </script>
+
+    <style>
+        .k-rating {
+            flex-direction: column-reverse;
+        }
+
+        .k-rating-label {
+            justify-content: center;
+        }
+
+        .k-rating-item:nth-child(1) .main-stop {
+            stop-color: #FF0000;
+        }
+        .k-rating-item:nth-child(1) .alt-stop {
+            stop-color: #ff5101;
+        }
+
+        .k-rating-item:nth-child(2) .main-stop {
+            stop-color: #ff5101;
+        }
+        .k-rating-item:nth-child(2) .alt-stop {
+            stop-color: #ffaa02;
+        }
+
+        .k-rating-item:nth-child(3) .main-stop {
+            stop-color: #ffc801;
+        }
+        .k-rating-item:nth-child(3) .alt-stop {
+            stop-color: #fef100;
+        }
+
+        .k-rating-item:nth-child(4) .main-stop {
+            stop-color: #dbe300;
+        }
+        .k-rating-item:nth-child(4) .alt-stop {
+            stop-color: #a4cd00;
+        }
+
+        .k-rating-item:nth-child(5) .main-stop {
+            stop-color: #8bc301;
+        }
+        .k-rating-item:nth-child(5) .alt-stop {
+            stop-color: #4eaa01;
+        }
+    </style>
+</div>
+
+<div> <a href = "calendar.html">no aparece por queeeeeeeeee</a> </div>
+
+<script>
+  document.write (calendar.html);
+</script>
+
+<base href="https://demos.telerik.com/kendo-ui/calendar/selection?autoRun=true&theme=material-v2">
+    
+<div id="example">
+    <div class="demo-section k-content" style="text-align: center;">
+        <h4>Chequea si la habitacion que deseas esta disponible en la fecha que la queres</h4>
+        <div id="calendar"></div>
+    </div>
+    <script>
+                $(document).ready(function() {
+                    // create Calendar from div HTML element
+                    $("#calendar").kendoCalendar({
+                        selectable: "multiple",
+                        weekNumber: true,
+                        disableDates: ["we", "sa"]
+                    });
+                });
+    </script>
+</div>
+
+
+
+    
+
+</body>
+
+
+  
+
+  </html>

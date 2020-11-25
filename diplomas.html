@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="https://demos.telerik.com/kendo-ui/fx/pageturn">
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.default-v2.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/jquery.min.js"></script>
+    
+    
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js"></script>
+    
+    
+
+</head>
+<body>
+    <div id="example">
+    <div id="wrap" class="first-page">
+        <ul id="book">
+            <li><img src="https://github.com/Esty-tech/Hotel/blob/master/hotel6.jpg" alt="Page 6" /></li>
+            <li><img src="https://github.com/Esty-tech/Hotel/blob/master/hotel6.jpg" alt="Page 5" /></li>
+            <li><img src="../content/web/fx/pageturn/mercedes.jpg" alt="Page 4" /></li>
+            <li><img src="https://github.com/Esty-tech/Hotel/blob/master/hotel6.jpg" alt="Page 3" /></li>
+            <li><img src="https://github.com/Esty-tech/Hotel/blob/master/hotel6.jpg" alt="Page 2" /></li>
+            <li class="current"><img src="https://github.com/Esty-tech/Hotel/blob/master/hotel1.jpg" alt="Page 1" /></li>
+        </ul>
+
+        <a href="#" id="previous">Previous page</a>
+        <a href="#" id="next">Next page</a>
+    </div>
+
+    <script>
+        function current(page) {
+            var book = $("#book"),
+                pages = book.children(),
+                pagesCount = pages.length,
+                current = pages.filter(".current"),
+                currentIndex = pagesCount - current.index(),
+                newPage;
+
+            if (!arguments.length) {
+                return currentIndex;
+            }
+
+            if (book.data("animating")) {
+                return;
+            }
+
+            $("#wrap").toggleClass("first-page", page == 1)
+                      .toggleClass("last-page", page == pagesCount);
+
+            if (page != currentIndex) {
+                current.removeClass("current");
+                newPage = pages.eq(pagesCount - page).addClass("current");
+
+                if (page > currentIndex) {
+                    kendo.fx(book).pageturnHorizontal(current, newPage).play();
+                } else {
+                    kendo.fx(book).pageturnHorizontal(newPage, current).reverse();
+                }
+            }
+        }
+
+        $("#previous").click(function(e) {
+            e.preventDefault();
+            current(Math.max(1, current() - 1));
+        });
+
+        $("#next").click(function(e) {
+            e.preventDefault();
+            current(Math.min(6, current() + 1));
+        });
+    </script>
+
+    <style>
+        #wrap {
+            background-image: url("https://github.com/Esty-tech/Hotel/blob/master/hotel6.jpg");
+            width: 657px;
+            height: 482px;
+            margin: 2.5em auto 4em;
+            position: relative;
+        }
+
+        #book {
+            position: relative;
+            width: 650px;
+            height: 477px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #book > li {
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            background-color: #fff;
+        }
+
+        #actions {
+            overflow: hidden;
+            margin: 0 auto 3em;
+            width: 650px;
+        }
+
+        #previous, #next {
+            text-decoration: none;
+            text-indent: -999em;
+            overflow: hidden;
+            display: block;
+            height: 100%;
+            width: 50px;
+            position: absolute;
+            top: 0;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            opacity: .5
+        }
+
+        #previous:hover, #next:hover {
+            opacity: 1;
+        }
+
+        #previous {
+            left: 0;
+            background-image: url("../content/web/fx/pageturn/arrow-left.png");
+        }
+
+        #next {
+            right: 0;
+            background-image: url("https://github.com/Esty-tech/Hotel/blob/master/hotel6.jpg");
+        }
+
+        .first-page #previous,
+        .last-page #next {
+            display: none;
+        }
+    </style>
+</div>
+
+
+
+    
+
+</body>
+</html>

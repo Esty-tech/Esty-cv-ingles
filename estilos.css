@@ -1,0 +1,360 @@
+*{
+    padding: 0px;
+    
+    /*background-color: rgba(255, 235, 197, 0.849);*/
+   }
+   body{
+    
+    max-width: 75%;
+    min-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px ;
+    background-color: rgba(255, 235, 197, 0.849);
+    border: 2px dotted rgb(248, 145, 10);
+  }
+  body ul li{
+    list-style: none;
+}
+
+p{
+    font-size: 18px;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+    text-align: center;
+}
+.cuerpo{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom:3px;
+    }
+.copy{
+    text-align: center;
+}
+footer video{
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    top: 50px;
+    caption-side: bottom;
+}
+
+.sociales{
+    color:rgb(10, 10, 10);
+    height: 40px;
+    margin-top: 20px;
+}
+.sociales a{
+    display: inline-table;
+    margin-top: ;
+    margin: 3px;
+    padding: 3px;
+    border-right: solid 1px rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.sociales a:hover{
+    padding-left: 2px;
+}
+.contenido{
+    display: block;
+    width: 50%;
+    padding: 0;
+    height: 100%;
+}
+.lateral{
+    display: inline-block;
+    height: 80%;
+    width: 50%;
+    height: auto;
+    padding: 2px;
+    float: right;
+    top: 50px;
+}
+.thumbnail img{
+    float: none;
+}
+.lateral header{
+    font-size: 22px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(4, 0, 255);
+    height: 70px;
+    top: 50px;
+    margin-bottom: 20px;
+}
+header{
+    font-size: 27px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 255);
+    background-color: rgb(255, 165, 0);
+    display: block;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.principal{
+    display: block;
+
+}
+.perfil{
+        text-align: left;
+}
+
+
+.portafolio p{
+    background-color: rgb(255, 165, 0);
+}
+.foto{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+img{
+    display: block;
+    height: 200px;
+    border-radius: 65px;
+    margin-left: 20px;
+    }
+.contacto ul{
+    list-style: none;
+}
+/*ACA EMPIEZA KENDO-PDF MODIFICABLE*/
+.pdf-page {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    color: rgb(10, 10, 10);
+    background-color: rgb(63, 195, 235);
+    box-shadow: 0 15px 30px 0 rgba(197, 130, 4, 0.863);
+}
+#grid{
+   width: 100%;
+}
+
+.pdf-header {
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0934f5;
+}
+
+.pdf-footer {
+    text-align: end;
+    color: rgba(0, 0, 0, 0.973);
+}
+
+.page-container .hidden-on-narrow{
+    width: 100%;
+}
+.pdf-body {
+    margin-top: 5px;
+}
+
+.company-logo {
+    font-size: 18px;
+    text-shadow: 0 10px 50px 0 rgba(250, 37, 37, 0.3);
+    text-shadow: chocolate;
+    font-weight: bold;
+    color: #141414;
+}
+
+/* Dimensions other than px and em should be divided by 1.33 for the proper PDF output */
+.size-a4 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/*DISENO RESPONSIVE*/
+@media screen and (max-width:480px){
+	body {
+		font-size:80%; /* achicamos la fuente en pantallas pequeñas */
+    } 
+    *{
+        padding: 0px;
+        margin: 0px;
+       }
+       body{
+        display: block;
+        min-width: 200px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 235, 197, 0.849);
+        border: .5px solid rgb(248, 145, 10);
+      }
+      body ul li a{
+        list-style: none;
+    }
+    
+    p{
+        font-size: 18px;
+        font-family: serif;
+        font-weight: bold;
+        color: rgb(0, 0, 255);
+        text-decoration: underline;
+        text-align: center;
+    }
+    .cuerpo{
+        margin-top: 10px;
+        
+        display: block;
+        width: auto;
+        box-sizing: border-box;
+        border: .5px solid rgb(10, 10, 10);
+        padding: 3px;
+        margin: 5px;
+        margin-bottom:50px;
+        }
+    footer{
+    }
+    .copy{
+        text-align: center;
+    }
+    
+    .sociales{
+        color:rgb(10, 10, 10);
+        height: 40px;
+        margin-top: 20px;
+    }
+    .sociales a{
+        display: inline-table;
+        margin-top: ;
+        margin: 3px;
+        padding: 3px;
+        border-right: solid 1px rgb(0, 0, 0);
+        text-decoration: none;
+    
+    }
+    .sociales a:hover{
+        padding-left: 2px;
+    }
+    .contenido{
+        display: block;
+        width: 100%;
+        padding: 5;
+        height: 100%;
+        text-decoration: none;
+    }
+    .lateral{
+        display: flexbox;
+        height: auto;
+        width: 100%;
+        height: auto;
+        padding: 8px;
+        top: 50px;
+    }
+    .lateral header{
+        font-size: 18px;
+        font-family: serif;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(4, 0, 255);
+        height: 30px;
+        top: 50px;
+        margin-bottom: 50px;
+    }
+    header{
+        font-size: 27px;
+        font-family: serif;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(0, 0, 255);
+        background-color: rgb(255, 165, 0);
+        display: block;
+        height: 70px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+    .principal{
+        display: block;
+    }
+    .perfil{
+            text-align: center;
+    }
+    
+    
+    .portafolio p{
+        background-color: rgb(255, 165, 0);
+    }
+    .portafolio a{
+        list-style: none;
+    }
+    .foto{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    img{
+        display: block;
+        height: 200px;
+        border-radius: 65px;
+        margin-left: 20px;
+        }
+    .contacto ul{
+        list-style: none;
+    }
+    /*ACA EMPIEZA KENDO-PDF MODIFICABLE*/
+    .pdf-page {
+        display:block;
+        margin-top: 55px;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        color: rgb(10, 10, 10);
+        background-color: rgb(63, 195, 235);
+        box-shadow: 0 15px 30px 0 rgba(197, 130, 4, 0.863);
+    }
+    #grid{
+        width: 100%;
+        /*color: rgb(255, 165, 0);*/
+        color: rgb(24, 24, 26);
+    }
+    
+    .pdf-header {
+        padding-bottom: 1px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #0934f5;
+    }
+    
+    .pdf-footer {
+        bottom: 5px;
+        left: 5px;
+        padding: 8px;
+        border-top: 1px solid #37f308;
+        font-size: 10px;
+        text-align: end;
+        color: rgba(20, 20, 20, 0.973);
+    }
+    
+    
+    .pdf-body {
+        margin-top: 10px;
+    }
+    
+    .company-logo {
+        font-size: 18px;
+        font-weight: bold;
+        color: #141414;
+    }
+    
+    /* Dimensions other than px and em should be divided by 1.33 for the proper PDF output */
+    .size-a4 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}

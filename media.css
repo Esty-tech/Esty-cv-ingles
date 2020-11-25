@@ -1,0 +1,11 @@
+
+@media(min-width:550px) {
+    .contenido{
+        background-color:;
+        display: block;
+        
+        width: 70%;
+        padding: 10px;
+        height: 100%;
+    }
+}
